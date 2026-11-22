@@ -1,0 +1,47 @@
+{
+ "tests": [
+  {
+   "in": {
+    "csv": "name,u,qty,kg,w,pos\nUPS 3 kVA,2,1,32,,\nEk akü modülü,2,1,45,,\nSunucu,2,3,22,450,\nNVR,2,1,12,120,\nPoE switch,1,2,4,740,\nPatch panel,1,2,1,,40\nFiber ODF,1,1,2,,42\nKablo düzenleyici,1,2,1,,",
+    "height": 42,
+    "maxkg": 600,
+    "heavy": true
+   },
+   "v": {
+    "used": 19,
+    "free": 23,
+    "unplaced": [],
+    "pos": {
+     "Ek akü modülü": 1,
+     "UPS 3 kVA": 3,
+     "Fiber ODF": 42,
+     "Patch panel #1": 40
+    }
+   }
+  },
+  {
+   "in": {
+    "csv": "name,u,qty\nSunucu,2,6\nSwitch,1,1",
+    "height": 12
+   },
+   "v": {
+    "used": 12,
+    "unplaced": [
+     "Switch"
+    ]
+   }
+  },
+  {
+   "in": {
+    "csv": "name,u,pos\nA,2,10\nB,1,11"
+   },
+   "err": "csv"
+  },
+  {
+   "in": {
+    "csv": "name,u\nA,0"
+   },
+   "err": "csv"
+  }
+ ]
+}
